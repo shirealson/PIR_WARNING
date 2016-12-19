@@ -34,7 +34,7 @@ void loop()
     Serial.println("RESET!");
     }
 
-  if (millis()-timer1>time_max)
+  if (millis()-timer1>time_max||sensor_tem>35)
   {
     
     buzzer();
